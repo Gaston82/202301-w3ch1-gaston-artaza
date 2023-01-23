@@ -3,7 +3,8 @@
     "@parcel/transformer-html": "^2.8.3",
     "lint-staged": "^13.1.0",
     "parcel": "^2.8.3",
-    "rimraf": "^4.1.1"
+    "rimraf": "^4.1.1",
+    "husky": "^8.0.0"
   },
   "name": "202301-w3ch1-gaston-artaza",
   "version": "1.0.0",
