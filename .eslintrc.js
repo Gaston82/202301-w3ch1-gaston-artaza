@@ -6,7 +6,7 @@ module.exports = {
   extends: ["xo", "prettier"],
   overrides: [
     {
-      extends: ["xo-typescript", "prettier"],
+      extends: ["xo-typescript"],
       files: ["*.ts", "*.tsx"],
     },
   ],
@@ -14,7 +14,5 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {
-    console: "off",
-  },
+  rules: {},
 };
