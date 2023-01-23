@@ -1,7 +1,9 @@
 {
   "devDependencies": {
     "@parcel/transformer-html": "^2.8.3",
-    "lint-staged": "^13.1.0"
+    "lint-staged": "^13.1.0",
+    "parcel": "^2.8.3",
+    "rimraf": "^4.1.1"
   },
   "name": "202301-w3ch1-gaston-artaza",
   "version": "1.0.0",
@@ -61,7 +63,11 @@
     "xxhash-wasm": "^0.4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "prebuild:dev": "rimraf dist",
+    "prebuild": "rimraf dist",
+    "build:dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
