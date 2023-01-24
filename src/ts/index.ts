@@ -1,4 +1,5 @@
 import { Advisor } from "./Advisor/Advisor";
+import Card from "./components/Card";
 import { Fighter } from "./Fighter/Fighter";
 import { King } from "./King/King";
 import { Squire } from "./Squire/Squire";
@@ -44,3 +45,7 @@ export const jaime = new Fighter(jaimeData, "sword", 7);
 export const daenerys = new Fighter(daeneryseData, "Dragons", 10);
 export const tyrion = new Advisor(tyrionData, daenerys);
 export const bronn = new Squire(bronnData, 0, jaime);
+
+const app = document.querySelector(".main-container")!;
+
+const gaston = new Card(app, "Gaston", 28, "Artaza");
